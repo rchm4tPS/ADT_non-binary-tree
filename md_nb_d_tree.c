@@ -139,6 +139,9 @@ int main(int argc, char const *argv[])
                 printTree(root);
                 break;
             case 0:
+                // Mencoba hapus tree saat keluar
+                deleteTree(&tree);
+                if (tree.root == nil) printf("\n > Tree dikosongkan. . .\n");
                 exit(0);
 
             default:

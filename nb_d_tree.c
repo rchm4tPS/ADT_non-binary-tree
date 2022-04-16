@@ -61,6 +61,7 @@ void deleteNode (nbAddr *node)
 void deleteTree (nbTree *tree)
 {
     // free(tree->root);
+    tree->root = nil;
 }
 
 nbAddr getParent (nbAddr node)
